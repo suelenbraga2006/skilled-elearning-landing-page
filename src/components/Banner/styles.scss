@@ -1,2 +1,114 @@
 section.banner {
+  padding: 0 20px;
+  margin-bottom: 30px;
+
+  article {
+    h1 {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      color: #13183f;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #83869a;
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+      border-radius: 31px;
+      color: #fff;
+      padding: 10px 15px;
+
+      &:hover {
+        background: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+          ),
+          linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+      }
+    }
+  }
+
+  picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 327px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 689px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 389px 1fr;
+    margin: 100px auto 100px auto;
+
+    picture {
+      position: absolute;
+      overflow: hidden;
+      right: 0;
+      top: 0;
+
+      img {
+        width: 640px;
+        margin-right: -270px;
+        margin-top: -100px;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 1100px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    margin: 200px auto 200px auto;
+
+    article {
+      h1 {
+        font-size: 56px;
+        line-height: 70px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 40px;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    picture {
+      position: absolute;
+      overflow: hidden;
+      right: 0;
+      top: 0;
+
+      img {
+        width: 991px;
+        margin-right: -270px;
+        margin-top: -100px;
+      }
+    }
+  }
 }
