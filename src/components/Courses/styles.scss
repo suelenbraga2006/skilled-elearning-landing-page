@@ -1,2 +1,83 @@
 section.courses {
+  padding: 0 20px;
+
+  article.highlight {
+    background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    padding: 20px;
+    margin-bottom: 40px;
+
+    h2 {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+      color: #fff;
+    }
+  }
+
+  article {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+    margin-bottom: 40px;
+    padding: 50px 30px 30px 30px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: -25px;
+      left: 25px;
+    }
+
+    h3 {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 25px;
+      color: #13183f;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #83869a;
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      color: #f74780;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    article {
+      margin-right: 20px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+    width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 20px;
+
+    article {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
 }

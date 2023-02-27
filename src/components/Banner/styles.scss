@@ -61,6 +61,7 @@ section.banner {
 
     picture {
       position: absolute;
+      z-index: 9;
       overflow: hidden;
       right: 0;
       top: 0;
@@ -77,7 +78,7 @@ section.banner {
     width: 1100px;
     padding: 0;
     display: grid;
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 480px 1fr;
     margin: 200px auto 200px auto;
 
     article {
@@ -103,6 +104,7 @@ section.banner {
       overflow: hidden;
       right: 0;
       top: 0;
+      z-index: 9;
 
       img {
         width: 991px;
