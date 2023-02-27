@@ -51,12 +51,24 @@ section.courses {
       font-size: 18px;
       line-height: 28px;
       color: #f74780;
+      transition: color ease 0.3s;
+
+      &:hover {
+        color: #ffa7c3;
+      }
     }
   }
 
   @media (min-width: 768px) {
+    padding: 0;
+    width: 689px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 50%);
+
+    article.highlight {
+      padding: 50px 30px;
+    }
 
     article {
       margin-right: 20px;
@@ -75,9 +87,28 @@ section.courses {
     grid-template-columns: repeat(3, 32%);
     gap: 20px;
 
+    article.highlight {
+      padding: 50px 30px;
+
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+
     article {
       width: 100%;
       margin-right: 0;
+
+      h3 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
   }
 }
